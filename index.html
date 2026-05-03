@@ -1,1 +1,358 @@
-Pristine Himalayan Hydration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Pure - Pristine Himalayan Hydration</title>
+    <style>
+        :root {
+            --light-blue: #e3f2fd;
+            --white: #ffffff;
+            --premium-blue: #0d47a1;
+            --soft-gray: #f8f9fa;
+            --shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-blue) 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--premium-blue);
+            letter-spacing: 2px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--premium-blue);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.😎 0%, rgba(227,242,253,0.4) 100%);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--premium-blue);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            padding: 1rem 2.5rem;
+            background: var(--premium-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(13, 71, 161, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            background: #1565c0;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 100px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--premium-blue);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.4s;
+            border: 1px solid var(--light-blue);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            color: var(--premium-blue);
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #444;
+            margin: 15px 0;
+        }
+
+        /* DISTRIBUTION */
+        .distribution {
+            background: var(--soft-gray);
+            border-radius: 30px;
+            margin: 50px 10%;
+            padding: 60px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .dist-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--premium-blue);
+            color: white;
+            padding: 80px 10% 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--light-blue);
+            padding-left: 15px;
+        }
+
+        .footer-section p, .footer-section li {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            list-style: none;
+            opacity: 0.9;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .submit-btn {
+            background: var(--light-blue);
+            color: var(--premium-blue);
+            border: none;
+            padding: 10px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.8rem;
+        }
+
+        .spacer { height: 50px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">EVEREST PURE</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">The Source</a>
+            <a href="#products">Products</a>
+            <a href="#logistics">Logistics</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div id="home" class="hero">
+        <h1>High Altitude Purity</h1>
+        <p>Directly harvested from the pristine glaciers of Mt. Everest at 8,000 meters. Pure, oxygen-rich, and mineral-balanced water for the elite lifestyle.</p>
+        <div class="spacer"></div>
+        <a href="#products" class="cta-btn">View Our Collection</a>
+    </div>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>The Source</h2>
+            <p>Untouched by civilization, our water is naturally filtered through layers of Himalayan minerals.</p>
+        </div>
+        <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <p>Everest Pure is not just water; it is a testament to nature's perfection. Every drop is collected using sustainable gravity-flow systems that preserve the natural molecular structure of the glacial ice. Our commitment to the mountain ensures that for every liter sold, we contribute to the Khumbu region's environmental preservation.</p>
+                <br>
+                <p>We utilize carbon-neutral transport to bring this "Liquid Diamond" from the roof of the world to your doorstep in Kathmandu or any capital city worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="section-title">
+            <h2>Luxury Sizes</h2>
+            <p>Available in premium glass and BPA-free options</p>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-icon">💧</div>
+                <h3>Personal Elite</h3>
+                <p>330ml Glass Bottle</p>
+                <div class="price">NPR 450 / $4.00</div>
+                <p>Perfect for corporate boardrooms and luxury events.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🧊</div>
+                <h3>The Explorer</h3>
+                <p>750ml Titanium Series</p>
+                <div class="price">NPR 1,200 / $12.00</div>
+                <p>Lightweight, durable, and ready for adventure.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🌊</div>
+                <h3>Home Sanctuary</h3>
+                <p>5L Crystalline Carboy</p>
+                <div class="price">NPR 4,500 / $45.00</div>
+                <p>Monthly subscription available for home delivery.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="logistics" class="distribution">
+        <div class="dist-item">
+            <h3>Domestic (Nepal)</h3>
+            <p>Same-day delivery in Kathmandu, Lalitpur, and Bhaktapur. 48-hour delivery to Pokhara and Butwal.</p>
+        </div>
+        <div class="dist-item">
+            <h3>Worldwide</h3>
+            <p>Air-shipped via premium logistics to London, New York, Tokyo, and Dubai within 5-7 business days.</p>
+        </div>
+        <div class="dist-item">
+            <h3>Custom Orders</h3>
+            <p>Personalized branding for 5-star hotels and private jet catering services.</p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Headquarters:</strong></p>
+                <p>Khumbu Path, Ward No. 2</p>
+                <p>Kathmandu, Nepal</p>
+                <p><strong>Phone:</strong> +977-1-4200000</p>
+                <p><strong>Email:</strong> info@everestpure.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Purity Lab Reports</li>
+                    <li>Mountaineer Support Fund</li>
+                    <li>Global Distributors</li>
+                    <li>Careers at the Peak</li>
+                    <li>Sustainability Report</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Global Inquiry</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="4" placeholder="How can we hydrate you?"></textarea>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Everest Pure Himalayan Water Co. All Rights Reserved. 
+            <br>
+            <i>From the Roof of the World to the Palm of your Hand.</i>
+        </div>
+    </footer>
+
+    <script>
+        console.log("Everest Pure Website Initialized...");
+    </script>
+</body>
+</html>
